@@ -5,7 +5,7 @@ import "./Comments.scss";
 const currentUser = {
   id: "1",
   name: "Okorie Ifeanyi",
-  profilePic: "/assets/profileImg/1.jpg",
+  profilePic: "assets/profileImg/1.jpg",
 };
 
 interface CommentsProps {
