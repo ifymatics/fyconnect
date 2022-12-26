@@ -2,12 +2,6 @@
 
 .RightBar {
   @include themify($themes) {
-    @include mobile {
-      display: none;
-    }
-    @include tablet {
-      display: none;
-    }
     flex: 4.25;
     top: 72px;
     position: sticky;
@@ -143,6 +137,15 @@
         }
         //}
       }
+    }
+    @include miniPC {
+      display: none;
+    }
+    @include tablet {
+      display: none;
+    }
+    @include mobile {
+      display: none;
     }
   }
 }

@@ -78,3 +78,8 @@ $themes: (
     @content;
   }
 }
+@mixin miniPC {
+  @media (max-width: 1284px) {
+    @content;
+  }
+}
