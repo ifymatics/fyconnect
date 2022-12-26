@@ -14,7 +14,7 @@ const posts = [
         user: {
           id: "6",
           name: "John Doe",
-          profilePic: "/assets/profileImg/2.jpg",
+          profilePic: "./assets/profileImg/2.jpg",
         },
         comment: "This is a good news!",
       },
@@ -23,7 +23,7 @@ const posts = [
         user: {
           id: "10",
           name: "Sabaston Bayero",
-          profilePic: "/assets/storyProfileImg/story1.jpg",
+          profilePic: "./assets/storyProfileImg/story1.jpg",
         },
         comment: "I am happy for you sir. Keep the good work.",
       },
@@ -35,7 +35,7 @@ const posts = [
     title: "Meet and greet",
     user: "Ifeanyi Okorie",
     date: "18 mins ago",
-    image: "/assets/postImg/post2.jpg",
+    image: "./assets/postImg/post2.jpg",
     comments: [],
     likes: 0,
   },

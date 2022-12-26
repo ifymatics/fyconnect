@@ -25,7 +25,7 @@ const RightBar = () => {
           </div>
           <div className="user">
             <div className="userInfo">
-              <img src="/assets/profileImg/2.jpg" alt="" />
+              <img src="./assets/profileImg/2.jpg" alt="" />
               <span className="userName">Ifeanyi Okorie</span>
             </div>
             <div className="button">
@@ -38,7 +38,7 @@ const RightBar = () => {
           </div>
           <div className="user">
             <div className="userInfo">
-              <img src="/assets/profileImg/2.jpg" alt="" />
+              <img src="./assets/profileImg/2.jpg" alt="" />
               <span className="userName">Ifeanyi Okorie</span>
             </div>
             <div className="button">
@@ -57,7 +57,7 @@ const RightBar = () => {
           <span>Latest Activities</span>
           <div className="user">
             <div className="userInfo">
-              <img src="/assets/profileImg/2.jpg" alt="" />
+              <img src="./assets/profileImg/2.jpg" alt="" />
               <p>
                 <span className="userName">Ifeanyi Okorie</span>
                 <span className="text">changed his cover picture</span>
@@ -69,7 +69,7 @@ const RightBar = () => {
           </div>
           <div className="user">
             <div className="userInfo">
-              <img src="/assets/profileImg/2.jpg" alt="" />
+              <img src="./assets/profileImg/2.jpg" alt="" />
               <p>
                 <span className="userName">Ifeanyi Okorie</span>{" "}
                 <span className="text">liked your picture</span>
@@ -81,7 +81,7 @@ const RightBar = () => {
           </div>
           <div className="user">
             <div className="userInfo">
-              <img src="/assets/profileImg/2.jpg" alt="" />
+              <img src="./assets/profileImg/2.jpg" alt="" />
               <p>
                 <span className="userName">Ifeanyi Okorie</span>
                 <span className="text">accepted your friend request</span>
@@ -98,7 +98,7 @@ const RightBar = () => {
           <span>Online Friends</span>
           <div className="user">
             <div className="userInfo">
-              <img src="/assets/profileImg/2.jpg" alt="" />
+              <img src="./assets/profileImg/2.jpg" alt="" />
 
               <div className="online"></div>
               <span className="userName">Ifeanyi Okorie</span>
@@ -106,7 +106,7 @@ const RightBar = () => {
           </div>
           <div className="user">
             <div className="userInfo">
-              <img src="/assets/profileImg/2.jpg" alt="" />
+              <img src="./assets/profileImg/2.jpg" alt="" />
 
               <div className="online"></div>
               <span className="userName">Ifeanyi Okorie</span>
@@ -114,7 +114,7 @@ const RightBar = () => {
           </div>
           <div className="user">
             <div className="userInfo">
-              <img src="/assets/profileImg/2.jpg" alt="" />
+              <img src="./assets/profileImg/2.jpg" alt="" />
 
               <div className="online"></div>
               <span className="userName">Ifeanyi Okorie</span>
@@ -122,7 +122,7 @@ const RightBar = () => {
           </div>
           <div className="user">
             <div className="userInfo">
-              <img src="/assets/profileImg/2.jpg" alt="" />
+              <img src="./assets/profileImg/2.jpg" alt="" />
 
               <div className="online"></div>
               <span className="userName">Ifeanyi Okorie</span>
@@ -130,7 +130,7 @@ const RightBar = () => {
           </div>
           <div className="user">
             <div className="userInfo">
-              <img src="/assets/profileImg/2.jpg" alt="" />
+              <img src="./assets/profileImg/2.jpg" alt="" />
 
               <div className="online"></div>
               <span className="userName">Ifeanyi Okorie</span>
