@@ -72,14 +72,14 @@ const stories = [
     id: "8",
     img: "assets/storyProfileImg/story2.jpg",
     user: {
-      pic: "/assets/profileImg/2.jpg",
+      pic: "assets/profileImg/2.jpg",
       name: "Ifeanyi Jahbuikem",
       id: "8",
     },
   },
   {
     id: "9",
-    img: "/assets/storyProfileImg/story2.jpg",
+    img: "assets/storyProfileImg/story2.jpg",
     user: {
       pic: "assets/profileImg/2.jpg",
       name: "Ifeanyi Jahbuikem",
@@ -99,7 +99,7 @@ const stories = [
 const currentUser = {
   id: "10",
 
-  profilePic: "/assets/profileImg/2.jpg",
+  profilePic: "assets/profileImg/2.jpg",
   name: "Ifeanyi Jahbuikem",
 };
 interface StoryInterface {
