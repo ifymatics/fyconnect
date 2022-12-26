@@ -1,4 +1,4 @@
-import { FC, useLayoutEffect, useRef, useState } from "react";
+import { FC, useState } from "react";
 import LeftSlider from "../slider/LeftSlider";
 import RightSlider from "../slider/RightSlider";
 import Story from "../story/Story";
@@ -7,25 +7,25 @@ import "./Stories.scss";
 const stories = [
   {
     id: "1",
-    img: "/assets/postImg/post1.jpg",
+    img: "assets/postImg/post1.jpg",
     user: {
-      pic: "/assets/profileImg/2.jpg",
+      pic: "assets/profileImg/2.jpg",
       name: "Ifeanyi Okorie",
       id: "1",
     },
   },
   {
     id: "2",
-    img: "/assets/postImg/post1.jpg",
+    img: "assets/postImg/post1.jpg",
     user: {
-      pic: "/assets/storyProfileImg/story2.jpg",
+      pic: "assets/storyProfileImg/story2.jpg",
       name: "Ifeanyi Okorie",
       id: "2",
     },
   },
   {
     id: "3",
-    img: "/assets/postImg/post1.jpg",
+    img: "assets/postImg/post1.jpg",
     user: {
       pic: "assets/storyProfileImg/story3.jpg",
       name: "Ifeanyi Okorie",
@@ -34,43 +34,43 @@ const stories = [
   },
   {
     id: "4",
-    img: "/assets/postImg/post1.jpg",
+    img: "assets/postImg/post1.jpg",
     user: {
-      pic: "/assets/profileImg/1.jpg",
+      pic: "assets/profileImg/1.jpg",
       name: "Ifeanyi Okorie",
       id: "4",
     },
   },
   {
     id: "5",
-    img: "/assets/profileImg/2.jpg",
+    img: "assets/profileImg/2.jpg",
     user: {
-      pic: "/assets/profileImg/2.jpg",
+      pic: "assets/profileImg/2.jpg",
       name: "Ifeanyi Jahbuikem",
       id: "5",
     },
   },
   {
     id: "6",
-    img: "/assets/postImg/post1.jpg",
+    img: "assets/postImg/post1.jpg",
     user: {
-      pic: "/assets/profileImg/1.jpg",
+      pic: "assets/profileImg/1.jpg",
       name: "Ifeanyi Okorie",
       id: "6",
     },
   },
   {
     id: "7",
-    img: "/assets/storyProfileImg/story2.jpg",
+    img: "assets/storyProfileImg/story2.jpg",
     user: {
-      pic: "/assets/profileImg/2.jpg",
+      pic: "assets/profileImg/2.jpg",
       name: "Ifeanyi Jahbuikem",
       id: "7",
     },
   },
   {
     id: "8",
-    img: "/assets/storyProfileImg/story2.jpg",
+    img: "assets/storyProfileImg/story2.jpg",
     user: {
       pic: "/assets/profileImg/2.jpg",
       name: "Ifeanyi Jahbuikem",
@@ -81,16 +81,16 @@ const stories = [
     id: "9",
     img: "/assets/storyProfileImg/story2.jpg",
     user: {
-      pic: "/assets/profileImg/2.jpg",
+      pic: "assets/profileImg/2.jpg",
       name: "Ifeanyi Jahbuikem",
       id: "9",
     },
   },
   {
     id: "10",
-    img: "/assets/storyProfileImg/story2.jpg",
+    img: "assets/storyProfileImg/story2.jpg",
     user: {
-      pic: "/assets/profileImg/2.jpg",
+      pic: "assets/profileImg/2.jpg",
       name: "Ifeanyi Jahbuikem",
       id: "10",
     },
