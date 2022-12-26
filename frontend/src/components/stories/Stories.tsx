@@ -116,7 +116,7 @@ const Stories: FC = () => {
   const [visiblePix, setVisiblePix] = useState(120 * 3);
 
   const onClickStory = (story: any) => {
-    console.log(story);
+    //console.log(story);
   };
   //right:44px;transform:translate(calc(50% + 4px), -50%)
   const s = {

@@ -22,7 +22,6 @@ const Story: FC<StoryProps> = ({ story, handleClick, index, style }) => {
     setWidth(storiesDiv?.current.clientWidth);
   }, []);
   const onClick = () => {
-    console.log(index);
     handleClick(story);
   };
 

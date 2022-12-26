@@ -10,7 +10,7 @@ interface SliderProps {
   onClick?: (data: string) => void;
 }
 const Slider: FC<SliderProps> = ({ position, className, onClick }) => {
-  console.log(position, className);
+  //console.log(position, className);
   const handleSliderClick = (position: string) => {
     console.log(className, "sliderComponent");
     if (onClick) onClick(position);
