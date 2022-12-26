@@ -1,4 +1,5 @@
 import { Outlet } from "react-router-dom";
+import Content from "../content/Content";
 
 import LeftBar from "../leftBar/LeftBar";
 import NavBar from "../navBar/NavBar";
@@ -11,8 +12,8 @@ const Home = () => {
       <NavBar />
       <div className="Home">
         <LeftBar />
-        {/* <Content /> */}
-        <Outlet></Outlet>
+        <Content />
+        {/* <Outlet></Outlet> */}
         <RightBar />
       </div>
     </div>

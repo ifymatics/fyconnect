@@ -14,11 +14,7 @@ const Share = () => {
     <Card className="Share">
       <div className="shareWrapper">
         <div className="topShare">
-          <Image
-            src="/assets/profileImg/1.jpg"
-            alt=""
-            className="topShareImg"
-          />
+          <Image src="assets/profileImg/1.jpg" alt="" className="topShareImg" />
           <input
             className="topShareText"
             placeholder="What's in your mind, Ifeanyi?"
