@@ -12,7 +12,7 @@ const RightBar = () => {
           <span>Suggestion For You</span>
           <div className="user">
             <div className="userInfo">
-              <ProfileImg src="/assets/profileImg/2.jpg" />
+              <ProfileImg src="assets/profileImg/2.jpg" />
               <span className="userName">Ifeanyi Okorie</span>
             </div>
             <div className="button">
