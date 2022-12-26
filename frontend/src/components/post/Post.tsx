@@ -43,7 +43,7 @@ const Post: FC<PostProps> = ({ post }) => {
       <div className="postWrapper">
         <div className="topPost">
           <div className="topPostLeft">
-            <Image src="./assets/postImg/1.jpg" className="postProfileImg" />
+            <Image src="assets/postImg/1.jpg" className="postProfileImg" />
             <div className="postUserNameContainer">
               <span className="postUsername">
                 <strong> {post.user}</strong>
