@@ -18,8 +18,11 @@ const Comments: FC<CommentsProps> = ({ comments }) => {
         <User user={currentUser} fromComment={true} />
       </div>
       <div className="Comments">
-        <Comment currentUser={currentUser} commentData={comments[0]} />
-        <Comment currentUser={currentUser} commentData={comments[1]} />
+        {/* <Comment currentUser={currentUser} commentData={comments[0]} />
+        <Comment currentUser={currentUser} commentData={comments[1]} /> */}
+        {comments.map((comment) => (
+          <Comment key={comment.id} commentData={comment} />
+        ))}
       </div>
     </div>
   );

@@ -11,6 +11,7 @@ const posts = [
     image: "assets/postImg/post1.jpg",
     comments: [
       {
+        id: "1",
         user: {
           id: "6",
           name: "John Doe",
@@ -20,6 +21,7 @@ const posts = [
       },
 
       {
+        id: "2",
         user: {
           id: "10",
           name: "Sabaston Bayero",

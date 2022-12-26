@@ -7,13 +7,12 @@ interface UserProps {
   profilePic: string;
 }
 interface CommentProps {
-  currentUser: UserProps;
   commentData: {
     user: UserProps;
     comment: string;
   };
 }
-const Comment: FC<CommentProps> = ({ currentUser, commentData }) => {
+const Comment: FC<CommentProps> = ({ commentData }) => {
   return (
     <>
       <div className="commentor">
@@ -23,9 +22,7 @@ const Comment: FC<CommentProps> = ({ currentUser, commentData }) => {
             alt=""
             className="userCommentImg"
           />
-          <div className="userComment">
-            I was in the school when it happened.
-          </div>
+          <div className="userComment">{commentData.comment}</div>
         </div>
         <div className="likeAndReply">
           <span className="like">Like</span>
