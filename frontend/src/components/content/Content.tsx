@@ -8,7 +8,7 @@ const posts = [
     title: "Nice environment",
     user: "Johnson Doe",
     date: "9 mins ago",
-    image: "/assets/postImg/post1.jpg",
+    image: "./assets/postImg/post1.jpg",
     comments: [
       {
         user: {
@@ -42,7 +42,7 @@ const posts = [
 ];
 
 const Content = () => {
-  console.log(crypto.randomUUID());
+  //console.log(crypto.randomUUID());
   return (
     <div className="Content">
       <div className="contentWrapper">

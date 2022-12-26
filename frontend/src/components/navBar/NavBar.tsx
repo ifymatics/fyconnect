@@ -48,7 +48,7 @@ const NavBar = () => {
             className="rightContainerProfileImg"
           /> */}
           <ProfileImg
-            src="/assets/profileImg/2.jpg"
+            src="./assets/profileImg/2.jpg"
             className="rightContainerProfileImg"
           />
         </div>
