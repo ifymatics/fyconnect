@@ -1,0 +1,123 @@
+@import "./../../index.scss";
+.Story {
+  @include themify($themes) {
+    flex: 1;
+
+    height: 250px;
+    min-width: 25%;
+    width: 30px;
+    max-width: 30%;
+    overflow: hidden;
+    border-radius: 15px;
+    position: relative;
+
+    .StoryWrapper {
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      // position: relative;
+      height: 100%;
+      width: 100%;
+      min-width: 25%;
+      background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), transparent);
+      img {
+        width: inherit;
+        height: inherit;
+        object-fit: cover;
+        overflow: hidden;
+      }
+      .storyProfile {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        border: 5px solid #1877f2;
+      }
+      span {
+        position: absolute;
+        bottom: 8%;
+        left: 10px;
+        font-size: 0.9rem; //0.8125rem;
+
+        width: 80px;
+        font-weight: 600;
+        color: #ffffff;
+        word-wrap: break-word;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        display: -webkit-box;
+        overflow: hidden;
+        line-height: 1.2308;
+        padding-bottom: 1px;
+      }
+    }
+    @include mobile {
+      flex: 1 1;
+      height: 230px;
+      min-width: 130px;
+      width: 30px;
+      //max-width: 30%;
+      overflow: hidden;
+      border-radius: 15px;
+      position: relative;
+      .StoryWrapper {
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        // position: relative;
+        height: 100%;
+        width: 100%;
+        min-width: 25%;
+        background-image: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.4),
+          transparent
+        );
+        padding-top: 0px;
+        margin-top: 0;
+        img {
+          width: inherit;
+          height: inherit;
+          object-fit: cover;
+          overflow: hidden;
+          padding-top: 0px;
+          margin-top: 0px;
+        }
+        .storyProfile {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          position: absolute;
+          top: 10px;
+          left: 10px;
+          border: 5px solid #1877f2;
+        }
+        span {
+          position: absolute;
+          bottom: 8%;
+          left: 10px;
+          font-size: 0.9rem; //0.8125rem;
+
+          width: 80px;
+          font-weight: 600;
+          color: #ffffff;
+          word-wrap: break-word;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 2;
+          display: -webkit-box;
+          overflow: hidden;
+          line-height: 1.2308;
+          padding-bottom: 1px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,373 @@
+@import "./../../index.scss";
+.LeftBar {
+  @include themify($themes) {
+    flex: 2.75;
+    top: 72px;
+    position: sticky;
+    height: calc(100vh - 72px);
+    overflow-y: scroll;
+    &::-webkit-scrollbar {
+      width: 0px;
+    }
+    &:hover {
+      // margin-right: 1rem;
+
+      &::-webkit-scrollbar {
+        width: 7px;
+        height: 5px;
+      }
+      &::-webkit-scrollbar-track {
+        // background-color: rgb(198, 197, 197); //rgb(241, 236, 236);
+      }
+      &::-webkit-scrollbar-thumb {
+        background-color: rgb(198, 197, 197);
+      }
+    }
+    .leftBarContainer {
+      // margin-right: 1rem;
+
+      display: flex;
+      flex-direction: column;
+      justify-items: flex-start;
+      align-items: flex-start;
+
+      width: 100%;
+
+      padding: 17px;
+      //   margin-right: 5px;
+      .leftBarItemList {
+        width: 100%;
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        .leftBarItem {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 1.3rem;
+          cursor: pointer;
+          .leftBarItemIcon {
+            align-self: flex-start;
+            margin-right: 5px;
+          }
+          .textSpan {
+            margin-left: 1rem;
+            font-weight: 600;
+          }
+        }
+      }
+
+      .leftBarButton {
+        width: 150px;
+        border: none;
+        background-color: white;
+        padding: 10px;
+        border-radius: 5px;
+        font-weight: 600;
+        cursor: pointer;
+      }
+      .leftBarHr {
+        margin: 20px 0;
+        // background-color: gray;
+        width: 90%;
+      }
+      .leftBarFriendList {
+        list-style-type: none;
+        .leftBarFriend {
+          cursor: pointer;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 1.3rem;
+          //   .leftBarItemIcon {
+          //     align-self: flex-start;
+          //     margin-right: 5px;
+          //   }
+          .leftBarFriendImage {
+            width: 30px;
+            height: 30px;
+            object-fit: cover;
+            border-radius: 50%;
+          }
+          .leftBarFriendName {
+            margin-left: 1rem;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+    @include tablet {
+      // display: none;
+
+      flex: 1;
+      width: 20%;
+      // margin-right: 0.1rem;
+
+      .leftBarContainer {
+        // margin-right: 1rem;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        justify-content: center;
+        align-items: center;
+
+        width: 100%;
+
+        padding: 0;
+        .leftBarItemList {
+          width: 100%;
+          list-style-type: none;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          .leftBarItem {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.3rem;
+            padding: 5px;
+            cursor: pointer;
+            .leftBarItemIcon {
+              align-self: flex-start;
+              // margin-right: 5px;
+              width: 3rem;
+              height: 3rem;
+            }
+            .textSpan {
+              // margin-left: 1rem;
+              // font-weight: 600;
+              display: none;
+            }
+          }
+        }
+
+        .leftBarButton {
+          width: 150px;
+          border: none;
+          background-color: white;
+          padding: 10px;
+          border-radius: 5px;
+          font-size: 1.15rem;
+          font-weight: 600;
+          cursor: pointer;
+        }
+        .leftBarHr {
+          margin: 20px 0;
+          // background-color: gray;
+          width: 90%;
+        }
+        .leftBarFriendList {
+          list-style-type: none;
+          .leftBarFriend {
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.3rem;
+            //   .leftBarItemIcon {
+            //     align-self: flex-start;
+            //     margin-right: 5px;
+            //   }
+
+            .leftBarItemIcon {
+              width: 3rem;
+              height: 3rem;
+            }
+            .leftBarFriendImage {
+              width: 40px;
+              height: 40px;
+              object-fit: cover;
+              border-radius: 50%;
+            }
+            .leftBarFriendName {
+              margin-left: 1rem;
+              font-weight: 600;
+              display: none;
+            }
+          }
+        }
+      }
+    }
+    @include mobile {
+      // display: none;
+      top: 58px;
+      flex: 1;
+      width: 15%;
+      // margin-right: 0.1rem;
+      margin-top: 0;
+      .leftBarContainer {
+        // margin-right: 1rem;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+
+        width: 100%;
+
+        padding: 0 8px;
+        .leftBarItemList {
+          width: 100%;
+          list-style-type: none;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          .leftBarItem {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.3rem;
+            padding: 5px;
+            cursor: pointer;
+            .leftBarItemIcon {
+              align-self: flex-start;
+              // margin-right: 5px;
+              width: 1.3rem;
+              height: 1.3rem;
+            }
+            .textSpan {
+              // margin-left: 1rem;
+              // font-weight: 600;
+              display: none;
+            }
+          }
+        }
+
+        .leftBarButton {
+          width: 150px;
+          border: none;
+          background-color: white;
+          padding: 10px;
+          border-radius: 5px;
+          font-weight: 600;
+          cursor: pointer;
+          font-size: 0.55rem;
+        }
+        .leftBarHr {
+          margin: 20px 0;
+          // background-color: gray;
+          width: 90%;
+        }
+        .leftBarFriendList {
+          list-style-type: none;
+          .leftBarFriend {
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.3rem;
+            //   .leftBarItemIcon {
+            //     align-self: flex-start;
+            //     margin-right: 5px;
+            //   }
+
+            .leftBarItemIcon {
+              width: 1.4rem;
+              height: 1.4rem;
+            }
+            .leftBarFriendImage {
+              width: 30px;
+              height: 30px;
+              object-fit: cover;
+              border-radius: 50%;
+            }
+            .leftBarFriendName {
+              margin-left: 1rem;
+              font-weight: 600;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// .LeftBar:hover {
+//   flex: 3;
+
+//   display: flex;
+//   flex-direction: column;
+//   justify-items: flex-start;
+//   align-items: flex-start;
+//   overflow-y: scroll;
+//   width: 100%;
+//   top: 82px;
+//   position: sticky;
+//   height: calc(100vh - 82px);
+//   padding: 0 1rem;
+
+//   //   margin-right: 5px;
+//   .leftBarItemList {
+//     width: 100%;
+//     list-style-type: none;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: flex-start;
+//     .leftBarItem {
+//       display: flex;
+//       justify-content: space-between;
+//       align-items: center;
+//       margin-bottom: 1.3rem;
+//       cursor: pointer;
+//       .leftBarItemIcon {
+//         align-self: flex-start;
+//         margin-right: 5px;
+//       }
+//       .textSpan {
+//         margin-left: 1rem;
+//         font-weight: 600;
+//       }
+//     }
+//   }
+
+//   .leftBarButton {
+//     width: 150px;
+//     border: none;
+//     background-color: white;
+//     padding: 10px;
+//     border-radius: 5px;
+//     font-weight: 600;
+//     cursor: pointer;
+//   }
+//   .leftBarHr {
+//     margin: 20px 0;
+//     // background-color: gray;
+//     width: 90%;
+//   }
+//   .leftBarFriendList {
+//     list-style-type: none;
+//     .leftBarFriend {
+//       cursor: pointer;
+//       display: flex;
+//       justify-content: space-between;
+//       align-items: center;
+//       margin-bottom: 1.3rem;
+
+//       .leftBarFriendImage {
+//         width: 30px;
+//         height: 30px;
+//         object-fit: cover;
+//         border-radius: 50%;
+//       }
+//       .leftBarFriendName {
+//         margin-left: 1rem;
+//         font-weight: 600;
+//       }
+//     }
+//   }
+//   &::-webkit-scrollbar {
+//     width: 7px;
+//     height: 7px;
+//   }
+//   &::-webkit-scrollbar-track {
+//     // background-color: rgb(198, 197, 197); //rgb(241, 236, 236);
+//   }
+//   &::-webkit-scrollbar-thumb {
+//     background-color: rgb(198, 197, 197);
+//   }
+// }

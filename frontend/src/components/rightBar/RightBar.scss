@@ -1,0 +1,148 @@
+@import "./../../index.scss";
+
+.RightBar {
+  @include themify($themes) {
+    @include mobile {
+      display: none;
+    }
+    @include tablet {
+      display: none;
+    }
+    flex: 4.25;
+    top: 72px;
+    position: sticky;
+    height: calc(100vh - 72px);
+    overflow-y: scroll;
+    &::-webkit-scrollbar {
+      width: 7px;
+      height: 5px;
+    }
+    &:hover {
+      &::-webkit-scrollbar {
+        width: 7px;
+        height: 5px;
+        line-height: 2px;
+      }
+      &::-webkit-scrollbar-track {
+        // background-color: rgb(198, 197, 197); //rgb(241, 236, 236);
+      }
+      &::-webkit-scrollbar-thumb {
+        background-color: rgb(198, 197, 197);
+      }
+    }
+    .rightBarContainer {
+      padding: 17px;
+
+      .itemList {
+        width: 100%;
+        //padding: 1rem;
+        // padding-top: 1.4rem;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+        // margin-bottom: 30px;
+        border-radius: 10px;
+        // .item {
+        //   display: flex;
+        //   flex-direction: column;
+        //   justify-content: center;
+
+        //   width: 100%;
+        // row-gap: 8px;
+        span {
+          font-size: 15px;
+          color: gray;
+          margin: 0.7rem 0;
+        }
+        .user {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 1rem;
+
+          .userInfo {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            column-gap: 15px;
+            position: relative;
+            img {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              width: 40px;
+              height: 40px;
+              border-radius: 50%;
+              object-fit: cover;
+            }
+            .online {
+              width: 12px;
+              height: 12px;
+              border-radius: 50%;
+              background-color: limegreen;
+              position: absolute;
+              top: 0;
+              left: 30px;
+            }
+            .userName {
+              font-weight: 500;
+              color: black;
+              font-size: 1rem;
+              margin-right: 5px;
+            }
+            .text {
+              color: gray;
+
+              font-size: 1rem;
+            }
+            // p {
+            //   color: gray;
+
+            //     font-size: small;
+
+            // }
+          }
+          .button {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+            cursor: pointer;
+            button {
+              padding: 7px;
+              border-radius: 5px;
+              border: none;
+              &:first-child {
+                background-color: #1877f2;
+                color: white;
+                font-weight: 500;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 5px;
+                .addIcon {
+                  font-size: 1rem !important;
+
+                  // width: 5px !important;
+                  // height: 5px !important;
+                  // font-weight: 100;
+                }
+              }
+              &:last-child {
+                // background-color: #f54;
+                color: gray;
+                font-weight: 500;
+                font-size: 1rem;
+              }
+            }
+            span {
+              font-size: small;
+            }
+          }
+        }
+        //}
+      }
+    }
+  }
+}
