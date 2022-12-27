@@ -8,7 +8,8 @@
   }
   @include themify($themes) {
     @include tablet {
-      width: 85%;
+      width: 88%;
+      flex: 11;
       .contentWrapper {
         padding: 10px;
         padding-top: 0px;
