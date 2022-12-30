@@ -1,5 +1,5 @@
 {
-  "name": "ussd",
+  "name": "FYCONNECT",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -14,5 +14,9 @@
     "body-parser": "^1.20.1",
     "dotenv": "^16.0.3",
     "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "jest": "^29.3.1",
+    "supertest": "^6.3.3"
   }
 }
