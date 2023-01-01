@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/fyconnect/static/css/main.bfc56527.css",
-    "main.js": "/fyconnect/static/js/main.4c016d71.js",
+    "main.css": "/fyconnect/static/css/main.c186daed.css",
+    "main.js": "/fyconnect/static/js/main.66fd5ea4.js",
     "index.html": "/fyconnect/index.html",
-    "main.bfc56527.css.map": "/fyconnect/static/css/main.bfc56527.css.map",
-    "main.4c016d71.js.map": "/fyconnect/static/js/main.4c016d71.js.map"
+    "main.c186daed.css.map": "/fyconnect/static/css/main.c186daed.css.map",
+    "main.66fd5ea4.js.map": "/fyconnect/static/js/main.66fd5ea4.js.map"
   },
   "entrypoints": [
-    "static/css/main.bfc56527.css",
-    "static/js/main.4c016d71.js"
+    "static/css/main.c186daed.css",
+    "static/js/main.66fd5ea4.js"
   ]
 }
