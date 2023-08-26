@@ -7,7 +7,7 @@
     padding: 1rem 1rem;
     display: flex;
     justify-content: center;
-
+    flex-wrap: nowrap;
     // overflow-y: hidden;
     background-color: #f0f2f5;
     @include miniPC {
