@@ -1,7 +1,8 @@
 @import "./../../index.scss";
 .LeftBar {
+  flex: 1;
   @include themify($themes) {
-    flex: 2.75;
+    flex: 1;
     top: 72px;
     position: sticky;
     height: calc(100vh - 72px);
@@ -31,7 +32,7 @@
       justify-items: flex-start;
       align-items: flex-start;
 
-      width: 100%;
+      // width: 100%;
 
       padding: 17px;
       //   margin-right: 5px;

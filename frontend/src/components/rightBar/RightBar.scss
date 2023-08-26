@@ -2,7 +2,7 @@
 
 .RightBar {
   @include themify($themes) {
-    flex: 4.25;
+    flex: 1;
     top: 72px;
     position: sticky;
     height: calc(100vh - 72px);
@@ -26,7 +26,7 @@
     }
     .rightBarContainer {
       padding: 17px;
-
+      width: auto;
       .itemList {
         width: 100%;
         //padding: 1rem;
@@ -34,7 +34,7 @@
         display: flex;
         flex-direction: column;
         align-items: stretch;
-        width: 100%;
+
         // margin-bottom: 30px;
         border-radius: 10px;
         // .item {
@@ -65,8 +65,8 @@
               display: flex;
               justify-content: center;
               align-items: center;
-              width: 40px;
-              height: 40px;
+              width: 35px;
+              height: 35px;
               border-radius: 50%;
               object-fit: cover;
             }
@@ -82,7 +82,7 @@
             .userName {
               font-weight: 500;
               color: black;
-              font-size: 1rem;
+              font-size: 0.8rem;
               margin-right: 5px;
             }
             .text {
@@ -138,9 +138,9 @@
         //}
       }
     }
-    @include miniPC {
-      display: none;
-    }
+    // @include miniPC {
+    //   display: none;
+    // }
     @include tablet {
       display: none;
     }
