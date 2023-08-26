@@ -77,6 +77,12 @@
       }
       .leftBarFriendList {
         list-style-type: none;
+        width: 100%;
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
         .leftBarFriend {
           cursor: pointer;
           display: flex;
@@ -94,7 +100,7 @@
             border-radius: 50%;
           }
           .leftBarFriendName {
-            margin-left: 1rem;
+            margin-left: 0.9rem;
             font-weight: 600;
           }
         }
