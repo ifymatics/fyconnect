@@ -12,6 +12,7 @@ import Register from "./pages/register/Register";
 import Profile from "./pages/profile/Profile";
 import Content from "./components/content/Content";
 import StoriesLayout from "./components/storiesLayout/StoriesLayout";
+import Auth from "./pages/auth/Auth";
 
 function App() {
   const router = createHashRouter([
@@ -19,15 +20,15 @@ function App() {
       path: "/",
       element: <Home />,
       children: [
-        { path: "/", element: <Content /> },
-        { path: "/profile/:id", element: <Profile /> },
-        { path: "/:stories", element: <StoriesLayout /> },
+        { path: "/user", element: <Content /> },
+        { path: "/user/profile/:id", element: <Profile /> },
+        { path: "/user/:id/stories", element: <StoriesLayout /> },
       ],
     },
 
     {
-      path: "/login",
-      element: <Login />,
+      path: "/",
+      element: <Auth />,
     },
     {
       path: "/register",

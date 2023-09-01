@@ -142,6 +142,10 @@
       @include mobile {
         .timeLine {
           display: none;
+          width: 100%;
+          position: sticky;
+          z-index: 1000;
+          top: 0;
         }
         .rightContainerProfileContainer {
           // flex: 1;

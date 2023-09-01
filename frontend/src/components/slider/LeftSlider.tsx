@@ -11,7 +11,7 @@ interface SliderProps {
 }
 const LeftSlider: FC<SliderProps> = ({ position, className, onClick }) => {
   const handleSliderClick = (position: string) => {
-    console.log(className, "sliderComponent");
+    // console.log(className, "sliderComponent");
     if (onClick) onClick(position);
   };
   return (
