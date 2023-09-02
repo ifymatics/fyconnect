@@ -1,5 +1,6 @@
-import { Search, Chat, NotificationsNone, Person } from "@mui/icons-material";
+import { Chat, NotificationsNone } from "@mui/icons-material";
 import { Badge } from "@mui/material";
+import Search from "./../search/Search";
 import ProfileImg from "../image/Image";
 import "./NavBar.scss";
 
@@ -10,7 +11,7 @@ const NavBar = () => {
         <h2 className="logo">fyconnect</h2>
       </div>
       <div className="searchContainer">
-        <div className="search">
+        {/* <div className="search">
           <Search className="searchIcon" />
           <input
             className="searchInput"
@@ -19,7 +20,8 @@ const NavBar = () => {
             autoComplete="off"
             aria-label="Search for friend, video"
           ></input>
-        </div>
+        </div> */}
+        <Search placeholder="Search for friend, video" />
       </div>
       <div className="rightContainer">
         {/* <div className="timeLine">Timeline</div> */}

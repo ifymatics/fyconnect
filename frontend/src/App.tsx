@@ -20,14 +20,15 @@ function App() {
       path: "/",
       element: <Home />,
       children: [
-        { path: "/user", element: <Content /> },
-        { path: "/user/profile/:id", element: <Profile /> },
-        { path: "/user/:id/stories", element: <StoriesLayout /> },
+        { path: "/", element: <Content /> },
+        { path: "/profile/:id", element: <Profile /> },
+        { path: "/:id/stories", element: <StoriesLayout /> },
       ],
     },
 
     {
-      path: "/",
+      path: "/auth",
+
       element: <Auth />,
     },
     {
