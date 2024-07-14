@@ -2,6 +2,7 @@ import {
   createBrowserRouter,
   RouterProvider,
   createHashRouter,
+  Outlet,
 } from "react-router-dom";
 
 import "./App.scss";
@@ -15,17 +16,20 @@ import StoriesLayout from "./components/storiesLayout/StoriesLayout";
 import Auth from "./pages/auth/Auth";
 
 function App() {
-  const router = createHashRouter([
+  const router = createBrowserRouter([
     {
       path: "/",
       element: <Home />,
       children: [
-        { path: "/", element: <Content /> },
-        { path: "/profile/:id", element: <Profile /> },
-        { path: "/:id/stories", element: <StoriesLayout /> },
+        { path: "", element: <Content /> },
+        { path: "profile", element: <Profile /> },
+        { path: "stories", element: <StoriesLayout /> },
       ],
     },
-
+    {
+      path: "/login",
+      element: <Login />,
+    },
     {
       path: "/auth",
 
@@ -36,6 +40,7 @@ function App() {
       element: <Register />,
     },
   ]);
+
   return (
     <div className="App">
       {/* <NavBar />

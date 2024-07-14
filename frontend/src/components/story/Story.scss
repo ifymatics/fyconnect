@@ -10,7 +10,7 @@
     overflow: hidden;
     border-radius: 15px;
     position: relative;
-
+    scroll-snap-align: start;
     .StoryWrapper {
       overflow: hidden;
       display: flex;
