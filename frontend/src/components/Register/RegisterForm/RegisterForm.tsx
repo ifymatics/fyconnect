@@ -1,10 +1,14 @@
 import { Form, Formik, FormikHelpers, FormikValues } from "formik";
 import * as Yup from "yup";
-import RegisterInput from "../../inputs/LoginInput/LoginInput";
+import RegisterInput from "../../inputs/RegisterInput/RegisterInput";
 import "./RegisterForm.scss";
-import { useState, ChangeEvent } from "react";
+import { useState, ChangeEvent, FC } from "react";
+import { useMediaQuery } from "react-responsive";
 
-const RegisterForm = () => {
+type RegisterFormProp = {
+  cancelShowRegister: () => void;
+};
+const RegisterForm: FC<RegisterFormProp> = ({ cancelShowRegister }) => {
   const initialValues = {
     first_name: "",
     last_name: "",
@@ -21,7 +25,12 @@ const RegisterForm = () => {
   ) => {
     setUser((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
-  const handleRegisterSubmit = () => {};
+  const handleRegisterSubmit = () => {
+    const pickedDate = new Date(user.bYear, user.bMonth, user.bDay);
+    const lesThan14 = new Date(1970 + 14, 0, 1);
+    const notMoreThan70 = new Date(1970 + 70, 0, 1);
+    console.log(pickedDate, lesThan14, notMoreThan70);
+  };
   const years = Array.from(new Array(108), (val, index) => user.bYear - index);
   const months = Array.from(new Array(12), (val, index) => 1 + index);
   const getDays = () => new Date(user.bYear, user.bMonth, 0).getDate();
@@ -52,11 +61,16 @@ const RegisterForm = () => {
     bYear: Yup.string().required("Select a valid year"),
     gender: Yup.string().required("Select a gender"),
   });
+  const mobileView = useMediaQuery({ query: "(min-width:539px)" });
   return (
     <div className="blur">
       <div className="register">
         <div className="register_header">
-          <i className="exit_icon"></i>
+          <i
+            className="exit_icon"
+            onClick={cancelShowRegister}
+            style={{ cursor: "pointer" }}
+          ></i>
           <span>Sign Up</span>
           <span>It's quick and easy</span>
         </div>
@@ -67,18 +81,27 @@ const RegisterForm = () => {
         >
           {(formik: any) => (
             <Form className="register_form">
-              <div className="reg_line">
+              <div
+                className="reg_line"
+                style={{
+                  display: "flex",
+                  flexDirection: mobileView ? "row" : "column",
+                  width: "320px",
+                }}
+              >
                 <RegisterInput
                   name="first_name"
                   onChange={handleRegisterChange}
                   placeholder="First name"
                   type="text"
+                  value={user.first_name}
                 />
                 <RegisterInput
                   name="last_name"
                   onChange={handleRegisterChange}
                   placeholder="Last name"
                   type="text"
+                  value={user.last_name}
                 />
               </div>
               <div className="reg_line">
@@ -87,12 +110,14 @@ const RegisterForm = () => {
                   onChange={handleRegisterChange}
                   placeholder="Mobile number or Email"
                   type="text"
+                  value={user.email}
                 />
                 <RegisterInput
                   name="password"
                   onChange={handleRegisterChange}
                   placeholder="Password"
                   type="password"
+                  value={user.password}
                 />
               </div>
               <div className="reg_col">
@@ -185,7 +210,12 @@ const RegisterForm = () => {
                   notifications from us and can opt out at any time.
                 </div>
                 <div className="reg_btn_wrapper">
-                  <button className="green_btn open_signup">Sign Up</button>
+                  <button
+                    className="green_btn open_signup"
+                    onClick={handleRegisterSubmit}
+                  >
+                    Sign Up
+                  </button>
                 </div>
               </div>
             </Form>

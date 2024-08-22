@@ -2,10 +2,12 @@ import { Link } from "react-router-dom";
 import { Form, Formik } from "formik";
 import * as Yup from "yup";
 import LoginInput from "../../inputs/LoginInput/LoginInput";
-import { ChangeEvent, useState } from "react";
+import { ChangeEvent, useState, FC } from "react";
 import "./LoginForm.scss";
-
-const LoginForm = () => {
+type LoginProp = {
+  onHandleCreateAccount: () => void;
+};
+const LoginForm: FC<LoginProp> = ({ onHandleCreateAccount }) => {
   const [login, setLogin] = useState({ email: "", password: "" });
 
   const handleLoginChange = (e: ChangeEvent<HTMLInputElement>) => {
@@ -21,6 +23,9 @@ const LoginForm = () => {
       .email("Enter a valid mobile number or email address"),
     password: Yup.string().required(),
   });
+  const createNewAccount = () => {
+    onHandleCreateAccount();
+  };
   return (
     <div className="login_container">
       <div className="login_upper">
@@ -67,7 +72,9 @@ const LoginForm = () => {
             Forgotten Password?
           </Link>
           <div className="splitter"></div>
-          <button className=" blue_btn open_signup">Create new account</button>
+          <button className=" blue_btn open_signup" onClick={createNewAccount}>
+            Create new account
+          </button>
         </div>
 
         <Link to="/register_fo_business" className="sign_up_for_business">
