@@ -17,7 +17,7 @@ const RegisterInput: FC<InputProps> = ({ placeholder, position, ...props }) => {
   const tabletView = useMediaQuery({ query: "(min-width:850px)" });
   return (
     <div className="input_wrapper register_input_wrap">
-      {meta.touched && meta.error && <i className="error_icon"> </i>}
+      {/* {meta.touched && meta.error && <i className="error_icon"> </i>} */}
       {meta.touched && meta.error && !position && (
         <div
           className={
@@ -33,7 +33,7 @@ const RegisterInput: FC<InputProps> = ({ placeholder, position, ...props }) => {
             <div
               className={
                 tabletView && field.name !== "last_name"
-                  ? " desktop_error_arrow_left"
+                  ? "desktop_error_arrow_left"
                   : tabletView && field.name === "last_name"
                   ? "error_arrow_right"
                   : "error_arrow_top"
@@ -82,7 +82,7 @@ const RegisterInput: FC<InputProps> = ({ placeholder, position, ...props }) => {
       {meta.touched && meta.error && (
         <i
           className="error_icon"
-          style={{ top: `${!position && !tabletView ? "63%" : "15px"}` }}
+          style={{ top: `${!position && !tabletView ? "61%" : "10px"}` }}
         >
           {" "}
         </i>

@@ -2,8 +2,8 @@ import "./LeftBar.scss";
 // import profileImg from "./../../../public/assets/profileImg/1.jpg";
 import LeftBarItem from "../leftBarItem/LeftBarItem";
 import { leftBarItems } from "./../leftBarItem/leftBarItems";
-import Friend, { User } from "../Friend/Friend";
-import { Friends } from "../Friend/Friends";
+import Friend, { User } from "../../features/Friend/Friend";
+import { Friends } from "../../features/Friend/Friends";
 
 const LeftBar = () => {
   return (

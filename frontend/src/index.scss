@@ -2,6 +2,7 @@
   --bg-primary: #fff;
   --bg-secondary: #f0f2f5;
   --bg-third: #e4e6eb;
+  --bg-third1: #d7dded;
   --bg-forth: #f0f2f5;
   --color-primary: #050505;
   --color-secondary: #65676b;
@@ -160,7 +161,9 @@ $themes: (
     @content;
   }
 }
-
+@media (max-width: 850px) {
+  
+}
 @mixin largeScreen {
   @media (min-width: 850px) {
     @content;

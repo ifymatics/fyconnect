@@ -1,5 +1,5 @@
-import Post from "../post/Post";
-import Share from "../share/Share";
+import Post from "../../features/post/Post";
+import Share from "../../features/share/Share";
 import StoriesLayout from "../storiesLayout/StoriesLayout";
 import "./Content.scss";
 const posts = [

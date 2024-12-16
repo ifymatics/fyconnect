@@ -2,10 +2,10 @@ import { AutoStories, VideoCall, VideoLibrary } from "@mui/icons-material";
 import { FC, useState } from "react";
 import { Outlet } from "react-router-dom";
 import Card from "../card/Card";
-import Reels from "../reels/Reels";
-import Rooms from "../rooms/Rooms";
+import Reels from "../../features/reels/Reels";
+import Rooms from "../../features/rooms/Rooms";
 
-import Stories from "../stories/Stories";
+import Stories from "../../features/stories/Stories";
 
 import "./StoriesLayout.scss";
 

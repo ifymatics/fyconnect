@@ -4,18 +4,22 @@ import * as Yup from "yup";
 import LoginInput from "../../inputs/LoginInput/LoginInput";
 import { ChangeEvent, useState, FC } from "react";
 import "./LoginForm.scss";
+import { loginUser } from "../../../store/reducerSlices/authSlice";
+
+import { useAppDispatch } from "../../../store";
 type LoginProp = {
   onHandleCreateAccount: () => void;
 };
 const LoginForm: FC<LoginProp> = ({ onHandleCreateAccount }) => {
   const [login, setLogin] = useState({ email: "", password: "" });
+  const dispatch = useAppDispatch();
 
   const handleLoginChange = (e: ChangeEvent<HTMLInputElement>) => {
     setLogin((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
   const handleOnSubmit = (e: any) => {
-    e.preventDefault();
-    console.log();
+    //e.preventDefault();
+    dispatch(loginUser({ email: login.email, password: login.password }));
   };
   const loginValidation = Yup.object({
     email: Yup.string()
