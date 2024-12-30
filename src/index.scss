@@ -3,7 +3,7 @@
   --bg-secondary: #f0f2f5;
   --bg-third: #e4e6eb;
   --bg-third1: #d7dded;
-  --bg-forth: #f0f2f5;
+  --bg-fourth: #f0f2f5;
   --color-primary: #050505;
   --color-secondary: #65676b;
   --divider: #ced0d4;
@@ -119,7 +119,34 @@ $themes: (
     scrollbar: gray,
   ),
 );
-// body {
+//hovers
+.hover1:hover {
+  background: var(--bg-secondary);
+}
+.hover2:hover {
+  background: (--bg-third);
+}
+//active
+.active {
+  border-bottom: 3px solid var(--blue-color);
+  height: 56px;
+  border-radius: 0 !important;
+  transform: translate(0);
+  svg {
+    transform: translateY(1px) translateX(-1px);
+  }
+}
+
+.middle_notification {
+  position: absolute;
+  top: 3px;
+  right: 1.2rem;
+  background-color: #e41e3f;
+  border-radius: 50px;
+  padding: 1px 5px;
+  font-size: 13px;
+  color: #fff;
+}
 //   margin: 0;
 //   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
 //     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
@@ -162,7 +189,6 @@ $themes: (
   }
 }
 @media (max-width: 850px) {
-  
 }
 @mixin largeScreen {
   @media (min-width: 850px) {

@@ -27,7 +27,7 @@ interface AuthRoute {
 function App() {
   const { authenticated } = useSelector((state: State) => state.auth);
   const AuthProtectedRoute: FC<AuthRoute> = ({ children }: AuthRoute) => {
-    if (!authenticated) return <Navigate to="/login" />;
+    // if (!authenticated) return <Navigate to="/login" />;
     return children;
   };
 
